@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Fundación Mano Amiga</title>
+	<link rel="shorcut icon" href="img/favicon1.png">
+	<link rel="stylesheet" type="text/css" href="css/animate.css"> 
+	<link rel="stylesheet" type="text/css" href="css/style.css"> 
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"> <!-- resetear navegadores-->
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/responsiveslides.css">  <!-- descargado de http://responsiveslides.com/   slider-->
+	<!-- Fuentes de Google-->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	 <!-- Fuentes de Google-->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- llamado a jquery-->
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/responsiveslides.js">
+	</script>
+	
+<!-- llamado al script al momento de cargar el documento-->
+	<script>
+		$(document).ready(function(){
+			$("#slider-home").responsiveSlides({	
+				speed:800,		
+				nav: true,
+				namespace: 'slid-btns',
+				titleAnimation: 'bounceIn' 
+			});
+		});
+	</script>
+</head>
+<body>
+	<!-- empieza la cabecera-->
+<header class="cabecera"> <!-- header con clase = cabecera-->
+	<div class="container clearfix"> <!-- div con clase = cabecera-->
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.png"></a>
+		</div>
+		<nav class="menu"> <!-- menú de navegación-->
+			<ul class="clearfix">
+				<li class="active"><a href="index.html">INICIO</a></li>
+				<li><a href="nosotros.html">NOSOTROS</a></li>
+				<li><a href="portafolio.html">SERVICIOS</a></li>
+				<li><a href="apoyanos.html">APOYANOS</a></li>
+				<li><a href="blog.html">COMO AYUDAR</a></li>
+				<li><a href="contactanos.html">CONTACTO</a></li>
+			</ul>
+		</nav>
+	</div>
+</header> <!-- fin del header-->
+
+ <!-- inicio del slider-->
+<div class="slider">
+    <ul class="rslides" id="slider-home">
+    	  <li>
+        <img src="img/ayuda.png" alt="">
+        <div class="caption">
+          <h3 class="wow">BRINDALES UNA EDUCACIÓN DIGNA</h3>
+          <p class="wow">La educación es un proceso que no termina nunca, ayuda a un niño a llevar a la realidad sus actitudes. La educación es el camino hacia un futuro mejor.</p>
+        </div>
+      </li>
+      <li>
+        <img src="img/apadrinamos1.png" alt="">
+        <div class="caption">
+          <h3 class="wow">APADRINA A UN NIÑO</h3>
+          <p class="wow">El programa padrinos brinda la oportunidad de transformar la vida de un niño de la Fundación Rescatando Sueños cuya situación económica es restringida. </p>
+        </div>
+      </li>
+      <li>
+        <img src="img/hogares.png" alt="">
+        <div class="caption">
+          <h3 class="wow">REGALALES UN NUEVO HOGAR</h3>
+          <p class="wow">Todos los niños y niñas tienen derecho a una vivienda digna, necesitamos de tu colaboración para que el derecho al hogar sea una realidad.</p>
+        </div>
+      </li>
+      <li>
+        <img src="img/slider3.png" alt="">
+        <div class="caption">
+          <h3 class="wow">Regalales un libro</h3>
+          <br/> <br/>
+          <p class="wow">Contribuye a que un niño desarrolle su aprendizaje, un libro es la puerta hacia la imaginación. </p>
+        </div>
+      </li>
+    </ul>
+</div>
+
+
+<section class="servicios">
+	<!-- contenedor de los titulos-->
+	<hgroup class="titulos-wrap">
+		<!-- efecto de la libreria wow js-->
+		<h2 class="titulo wow bounceIn" data-wow-delay="0.3s">HAZ UNA DONACIÓN</h2>
+		<font size="2px"><p>Puedes ayudar a más de 1.000 niños y niñas al día haciendo una donación</p></font><br/>
+		<font size="2px"><p>Rellena este corto formulario, ¡te llevará menos de dos minutos!</p></font>
+	</hgroup>
+
+	<!-- contenedor con elementos flotantes-->
+	<div class="container">
+		<section class="posts-wrap" >
+	<div class="wrap">
+		 	<div class="about-desc">
+		     <div class="content">	 	
+		      <div class="about-data"> 
+		       <h2>TU APORTACIÓN</h2>
+		      
+		          <div class="contact-form">
+		          	<div class="left_form">
+					     <form method="post" action="comoayudar-post.html">
+					     	 <span><label>Aporte:</label>
+		       				<input type="radio" name="gender" value="cuota1" checked> $50.000
+  							<input type="radio" name="gender" value="cuota2"> $100.000
+  							<input type="radio" name="gender" value="cuota3"> Otros
+  							<input name="userName" type="text" class="textbox" placeholder="ingresar otros valores">
+  				            </span>
+
+					    	<div>
+					    	<span>	<h3>DATOS PERSONALES</h3>
+						    	<label>Nombres:*</label></span>
+						    	<span><input name="userName" type="text" class="textbox" placeholder="Nombres"></span>
+						    </div>
+						    <div>
+						    	<span><label>Primer Apellido:*</label></span>
+						    	<span><input name="userApel1" type="text" class="textbox" placeholder="Primer Apellido"></span>
+						    </div>
+						    <div>
+						    	<span><label>Segundo Apellido:*</label></span>
+						    	<span><input name="userApel2" type="text" class="textbox" placeholder="Segundo Apellido"></span>
+						    </div>
+						     <div>
+						    	<span><label>Número de Identificación:*</label></span>
+						    	<span><input name="id" type="text" class="textbox" placeholder="identificación"></span>
+
+						    	<span><label>Sexo:</label>
+		       				<input type="radio" name="genero" value="Femenino" checked> Femenino
+  							<input type="radio" name="genero" value="Masculino"> Masculino
+  							<input type="radio" name="genero" value="cuota"> Otro
+  							   </span>
+						    </div>
+
+						    <div>
+					    		<span><h3>DATOS DE CONTACTO</h3>
+						    	<label>Movil:*</label></span>
+						    	<span><input name="userMovil" type="text" class="textbox" placeholder="Movil">
+						    	<label>Email:*</label></span>
+						    	<input name="userEmail" type="text" class="textbox" placeholder="Movil">
+						    </div>
+
+						  </div>
+					     <div class="right_form">
+					     	 <div>
+					    		<span><h3>DATOS BANCARIOS</h3>
+					    			<P>Domiciliación Bancaria</P>
+						    	<label>Titular de la cuenta:*</label></span>
+						    	<span><input name="propietario" type="text" class="textbox" placeholder="propieatrio de la cuenta">
+						    	<label>Banco:*</label></span>
+						    	<span><input name="banco" type="text" class="textbox" placeholder="banco">
+						    	<label>Oficina:*</label></span>
+						    	<span><input name="oficina" type="text" class="textbox" placeholder="oficina">
+						    	<label>Número de la Cuenta:*</label></span>
+						    	<span><input name="numero_cuenta" type="text" class="textbox" placeholder="Cuenta bancaria">
+						    	<label>Departamento:*</label></span>
+						    	<span><input name="Departamento" type="text" class="textbox" placeholder="Departamento">
+						    	<label>Ciudad:*</label></span>
+						    	<span><input name="Ciudad" type="text" class="textbox" placeholder="Ciudad">
+						    	<label>Dirección:*</label></span>
+						    	<span><input name="Direccion" type="text" class="textbox" placeholder="Dirección">
+						    	<label>Número:*</label></span>
+						    	<span><input name="Numero" type="text" class="textbox" placeholder="Número">
+						    </div>
+
+					        <div>					    	
+						    	<span><label>Mensaje</label></span>
+						    	<span><textarea name="userMsg"> </textarea></span>
+						    </div>
+						   <div>
+						   		<span><input type="submit" value="ENVIAR" class="myButton"></span>
+						   </div>
+						 </div>
+						  <div class="clear"></div>
+					    </form>
+				    </div>
+				  <div class="content_bottom">
+				 	<div class="company_address">
+				     	<h2>Nuestra ubicación</h2>
+						    	<p>Valledupar, Cesar</p>
+						   		<p>Carrera 11 #13C-48</p>
+				   		<p>Telefono:(095) 5897917</p>
+				   		<p>Email: <span><a href="mailto:fundacionrescatandosueños@hotmail.com">fundacionrescatandosueños@hotmail.com</a></span></p>
+				    </div>
+				       <div class="contact_info">
+    	 				<h2>Encuentranos aquí</h2>
+					    	  <div class="map">
+					    	  	<iframe src="https://www.google.com/maps/embed?pb=!1m22!1m8!1m3!1d3923.305882587753!2d-73.25217678520185!3d10.47653534252547!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d10.476422399999999!2d-73.24973609999999!4m5!1s0x8e8ab9b688b21965%3A0xf6250ed33e74acb8!2sCarrera+11%2C+Valledupar%2C+Cesar!3m2!1d10.476127!2d-73.24971459999999!5e0!3m2!1ses-419!2sco!4v1467044744688" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+							   	    <br><small><a href="https://www.google.com/maps/place/Cra.+11+%2313c-48,+Valledupar,+Cesar,+Colombia/@10.4766122,-73.252163,17z/data=!3m1!4b1!4m5!3m4!1s0x8e8ab9b6801ec9e1:0xb6a99458c517ca0c!8m2!3d10.4766069!4d-73.2499743?hl=en" style="color:#999;text-align:left;font-size:13px">View Larger Map</a></small>
+							  </div>
+      				     </div>
+				      <div class="clear"></div>
+	                </div>
+		 	  </div>
+			</div>
+			</div>
+		  </div>		   			
+</section>
+		
+
+	</div>
+</section>
+
+<section class="contactme clearfix">
+	<div class="left">
+		<span class="dotted">Siguenos en nuestras redes sociales
+		</span> 
+
+	<div class="right">
+		<a href="https://www.facebook.com/Fundaci%C3%B3n-Rescatando-Sue%C3%B1os-256852841358499/" target="_blank"><img src="img/face.png"></a>
+		<a href="https://twitter.com/rescatandosuen1" target="_blank"><img src="img/twitter-icon.png"></a>
+		<a href="https://plus.google.com/collection/ID1T0" target="_blank"><img src="img/google+.png"></a>
+	</div>
+	</div>
+</section>
+<footer class="footer">
+	<p>Iraira Ospino - Todos los derechos reservados &copy; 2016</p>
+</footer>
+</body>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script>	
+  new WOW().init();    
+</script>
+</html>

@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Fundación Mano Amiga</title>
+	<link rel="shorcut icon" href="img/favicon1.png">
+	<link rel="stylesheet" href="css/animate.css"> <!-- libreria wow-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"> <!-- resetear navegadores-->
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/responsiveslides.css">  <!-- descargado de http://responsiveslides.com/   slider-->
+	<!-- Fuentes de Google-->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	 <!-- Fuentes de Google-->
+	
+	<!-- llamado a jquery-->
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/responsiveslides.js">
+	</script>
+	
+<!-- llamado al script al momento de cargar el documento-->
+	<script>
+		$(document).ready(function(){
+			$("#slider-home").responsiveSlides({	
+				speed:800,		
+				nav: true,
+				namespace: 'slid-btns',
+				titleAnimation: 'bounceIn' 
+			});
+		});
+	</script>
+</head>
+<body>
+	<!-- empieza la cabecera-->
+<header class="cabecera"> <!-- header con clase = cabecera-->
+
+	<div class="container clearfix"> <!-- div con clase = cabecera-->
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.png"></a>
+		</div>
+		<nav class="menu"> <!-- menú de navegación-->
+			<ul class="clearfix">
+				<li class="active"><a href="index.html">INICIO</a></li>
+				<li><a href="nosotros.html">NOSOTROS</a></li>
+				<li><a href="portafolio.html">SERVICIOS</a></li>
+				<li><a href="apoyanos.html">APOYANOS</a></li>
+				<li><a href="comoayudar.html">COMO AYUDAR</a></li>
+				<li><a href="contactanos.html">CONTACTO</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+</header> <!-- fin del header-->
+
+ <!-- inicio del slider-->
+<div class="slider">
+    <ul class="rslides" id="slider-home">
+    	  <li>
+        <img src="img/ayuda.png" alt="">
+        <div class="caption">
+          <h3 class="wow">BRINDALES UNA EDUCACIÓN DIGNA</h3>
+          <p class="wow">La educación es un proceso que no termina nunca, ayuda a un niño a llevar a la realidad sus actitudes. La educación es el camino hacia un futuro mejor.</p>
+        </div>
+      </li>
+      <li>
+        <img src="img/apadrinamos1.png" alt="">
+        <div class="caption">
+          <h3 class="wow">APADRINA A UN NIÑO</h3>
+          <p class="wow">El programa padrinos brinda la oportunidad de transformar la vida de un niño de la Fundación Rescatando Sueños cuya situación económica es restringida. </p>
+        </div>
+      </li>
+      <li>
+        <img src="img/hogares.png" alt="">
+        <div class="caption">
+          <h3 class="wow">REGALALES UN NUEVO HOGAR</h3>
+          <p class="wow">Todos los niños y niñas tienen derecho a una vivienda digna, necesitamos de tu colaboración para que el derecho al hogar sea una realidad.</p>
+        </div>
+      </li>
+      <li>
+        <img src="img/slider3.png" alt="">
+        <div class="caption">
+          <h3 class="wow">Regalales un libro</h3>
+          <br/> <br/>
+          <p class="wow">Contribuye a que un niño desarrolle su aprendizaje, un libro es la puerta hacia la imaginación. </p>
+        </div>
+      </li>
+    </ul>
+</div>
+<!-- resetear navegadores-->
+<section class="servicios">
+	<!-- contenedor de los titulos-->
+	<hgroup class="titulos-wrap">
+		<!-- efecto de la libreria wow js-->
+		<h2 class="titulo wow bounceIn" data-wow-delay="0.3s">PROGRAMAS Y SERVICIOS</h2>
+		
+	</hgroup>
+	<!-- contenedor con elementos flotantes-->
+	<div class="container">
+		<article class="item">
+			<div class="icon"><img src="img/ayuda1.jpg">
+			</div>
+			<header>
+				<h3><a href="#">Ayuda a niños y adolescentes</a></h3>
+				<p>Facilitar a los niños y adolescentes un espacio seguro, confidencial, en el que se sientan escuchados y respetados, y en el que puedan expresar libremente aquello que les ocurre para intentar buscar alternativas a sus problemas conjuntamente con ellos.</p>
+			</header>
+		</article>
+		<article class="item">
+			<div class="icon"><img src="img/hogares.png">
+				
+			</div>
+			<header>
+				<h3><a href="#">Nuestros hogares</a></h3>
+				<p>La finalidad de la Fundación Rescatando Sueños ha sido la de trabajar por el bienestar de los niños y niñas que carecen de un ambiente familiar adecuado, y proporcionarle un entorno que les permita adquirir un desarrollo integral.</p>
+			</header>
+		</article>
+		<article class="item">
+			<div class="icon"><img src="img/cole.jpg">
+				
+			</div>
+			<header>
+				<h3><a href="#">Colegios e Instituciones</a></h3>
+				<p>El mundo de la infancia y la adolescencia se encuentra estrechamente ligado al mundo educativo, por ello, la Fundación Rescatando Sueños consolida su presencia en el ámbito escolar.</p>
+			</header>
+		</article>
+	</div>
+</section>
+
+<section class="posts-wrap">    
+	<hgroup class="titulos-wrap">
+		<h2 class="titulo wow fadeIn" data-wow-delay="0.3s">Nuestras campañas</h2>
+	</hgroup>
+	<div class="container">
+		<figure class="post wow fadeInLeft" data-wow-delay="0.3s">
+			<img src="img/apadrinamos.png" alt="Blog 1" >
+			<figcaption>
+				<h3><a href="servicios-campañas.html">Apadrina a un niño.</a></h3>
+			</figcaption>
+		</figure>
+		<figure class="post wow fadeInLeft" data-wow-delay="0.6s">
+			<img src="img/libros.jpg" alt="Blog 2">
+			<figcaption>
+				<h3><a href="servicios-campañas.html">Entrega de material escolar</a></h3>
+			</figcaption>
+		</figure>
+		<figure class="post wow fadeInLeft" data-wow-delay="0.9s">
+			<img src="img/jugar.jpg" alt="Blog 3">
+			<figcaption>
+				<h3><a href="servicios-campañas.html">Jugar y compartir</a></h3>
+			</figcaption>
+		</figure>
+		<figure class="post wow fadeInLeft" data-wow-delay="1.2s">
+			<img src="img/alimentacion.jpg" alt="Blog 4">
+			<figcaption>
+				<h3><a href="servicios-campañas.html">Vigilancia Alimentaria y Nutricional</a></h3>
+			</figcaption>
+		</figure>
+	</div>
+</section>
+<section class="contactme clearfix">
+	<div class="left">
+		<span class="dotted">Siguenos en nuestras redes sociales
+		</span> 
+
+	<div class="right">
+		<a href="https://www.facebook.com/Fundaci%C3%B3n-Rescatando-Sue%C3%B1os-256852841358499/" target="_blank">
+			<img src="img/face.png"></a>
+		<a href="https://twitter.com/rescatandosuen1" target="_blank"><img src="img/twitter-icon.png" target="_blank"></a>
+		<a href="https://plus.google.com/collection/ID1T0" target="_blank"><img src="img/google+.png"></a>
+	</div>
+	</div>
+</section>
+<footer class="footer">
+	<p>Iraira Ospino - Todos los derechos reservados &copy; 2016</p>
+</footer>
+</body>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script>	
+  new WOW().init();    
+</script>
+</html>
